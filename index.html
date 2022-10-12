@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="description">
+        <div class="title">
+            <img src="customshoes.png" alt="Chaussure personnalisée">
+            <div class="title-text">
+                <h1>ROMALINXX</h1>
+                <h2>LE GOAT DES MODO</h2>
+            </div>
+        </div>
+        <hr>
+        <p class="description-paragraph">
+            Un follower fidèle depuis le 15 septembre 2021. Il est actuellement à son 11ème mois d'abonnement sur la chaîne. 
+            <br>Un modérateur d'exception, il mérite une pluie de <span class="romain-love">Romain LOVE !</span>
+        </p>
+    </div>
+    <div class="commands">
+        <h2>Liste des commandes : </h2>
+        <ul>
+            <li><div class="indicator">01</div>!epic <span>Affiche l'identifiant epic games</span></li>
+            <li><div class="indicator">01</div>/poll <span>Permet de lancer un sondage</span></li>
+            <li><div class="indicator">01</div>!eneba <span>Affiche la propagande eneba</span></li>
+            <li><div class="indicator">01</div>!discord <span>Affiche un lien pour accéder au discord</span></li>
+            <li><div class="indicator">01</div>!subgoal <span>Affiche la liste des subgoals</span></li>
+        </ul>
+    </div>
+</body>
+</html>
+
+
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+    :root {
+        --bg-color: #0D1C26;
+        --color-1 : #99B4BF;
+        --color-2 : #082126;
+        --color-3 : #3F7330;
+        --color-4 : #BFA89B;
+        --color-light : #ccc;
+    }
+
+    * {
+        font-family: 'Open Sans', sans-serif;
+        color: var(--color-light);
+    }
+
+    body {
+        padding: 0;
+        margin: 0;
+        background: var(--bg-color);
+        height: 100vh;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+
+    }
+
+    .description {
+        width: fit-content;
+        padding: 50px;
+        flex: 1;
+    }
+
+    .title {
+        display: flex;
+        gap: 50px;
+        align-items: center;
+    }
+
+    img {
+        border-radius: 50%;
+        height: 200px;
+    }
+
+    h1 {
+        color: var(--color-light);
+        font-size: 5rem;
+        letter-spacing: 1px;
+        font-weight: bold;
+        margin-block: 0;
+
+    }
+
+    h2 {
+        font-size: 3rem;
+        color: var(--color-3);
+        margin-block: 0;
+    }
+    hr {
+        margin-block: 50px;
+    }
+
+    .description-paragraph {
+         font-size: 1.5rem;
+    }
+
+    .commands {
+        min-width: 550px;
+        flex: 2;
+        padding: 50px;
+    }
+
+    .commands h2 {
+        text-align: center;
+        color: var(--color-1);
+        margin-block: 50px;
+    }
+
+    .commands ul {
+        list-style: none;
+        padding-inline-start: 0;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    li {
+        position: relative;
+        text-align: center;
+        flex: 1;
+        height: 200px;
+        min-width: 200px;
+        background: var(--color-2);
+        padding: 50px;
+        font-size: 2rem;
+        
+    }
+
+    .indicator {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        font-size: 1.5rem;
+    }
+
+    .commands span {
+        display: block;
+        font-size: 1rem;
+        margin-top: 50px;
+    }
+
+    .romain-love {
+        animation: colorswitch 3s infinite;
+    }
+
+    @keyframes colorswitch {
+        0%, 100% {
+            color: var(--color-light);
+        }
+        20% {
+            color: var(--color-3);
+        }
+        40% {
+            color: var(--color-1);
+        }
+        60% {
+            color: var(--color-3);
+        }
+        80% {
+            color: var(--color-4);
+        }
+    }
+
+</style>
