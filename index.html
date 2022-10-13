@@ -25,10 +25,10 @@
         <h2>Liste des commandes : </h2>
         <ul>
             <li><div class="indicator">01</div>!epic <span>Affiche l'identifiant epic games</span></li>
-            <li><div class="indicator">01</div>/poll <span>Permet de lancer un sondage</span></li>
-            <li><div class="indicator">01</div>!eneba <span>Affiche la propagande eneba</span></li>
-            <li><div class="indicator">01</div>!discord <span>Affiche un lien pour accéder au discord</span></li>
-            <li><div class="indicator">01</div>!subgoal <span>Affiche la liste des subgoals</span></li>
+            <li><div class="indicator">02</div>/poll <span>Permet de lancer un sondage</span></li>
+            <li><div class="indicator">03</div>!eneba <span>Affiche la propagande eneba</span></li>
+            <li><div class="indicator">04</div>!discord <span>Affiche un lien pour accéder au discord</span></li>
+            <li><div class="indicator">05</div>!subgoal <span>Affiche la liste des subgoals</span></li>
         </ul>
     </div>
 </body>
@@ -105,7 +105,7 @@
 
     .commands {
         min-width: 550px;
-        flex: 2;
+        flex: 1;
         padding: 50px;
     }
 
@@ -167,6 +167,29 @@
         }
         80% {
             color: var(--color-4);
+        }
+    }
+
+    @media (max-width:900px) {
+        .title {
+            flex-direction: column;
+        }
+
+        h1 {
+            font-size: 2rem;
+        }
+
+        h2 {
+            font-size: 1.2em;
+        }
+
+        .commands {
+            padding: 10px;
+            min-width: calc(100vw - 20px);
+        }
+
+        .commands li {
+            width: 150px;
         }
     }
 
